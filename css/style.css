@@ -30,8 +30,21 @@
 		float: left;
 	}
 
+	.arrow_down
+	{
+	    margin-top: 230px;
+	    width: 40px;
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    height: 40px;
+	    opacity: 0.6;
+	    cursor: pointer;
+	}
+
 	.topNav
 	{
+		margin-top: 40px;
 		width: 100%;
 		display: block;
 		float: left;
@@ -39,7 +52,7 @@
 
 	.topNavMenu
 	{
-		width: 400px;
+		width: 550px;
 		float: right;
 	}
 
@@ -58,8 +71,16 @@
 	{
 		display: inline-block;
 		color: white;
-		padding-right: 21px;
+		padding-right: 33px;
 		cursor: pointer;
+		font-family: Arial;
+		text-decoration: none;
+		opacity: 0.7;
+	}
+
+	.topNavLink:hover
+	{
+		opacity: 1;
 	}
 
 	/* HEADER END */
@@ -86,9 +107,10 @@
    .titlecaravan
    {
    	font-family: Arial;
-   	font-size: 1em;
+   	font-size: 22px;
    	color: white;
    	padding-left: 60px;
+	opacity: 0.8;
    	
    }
    #textcenter
