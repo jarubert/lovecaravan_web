@@ -1,0 +1,26 @@
+   	.topTextContainer
+	{
+		height: 10%;
+		padding-top: 120px;
+		width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+   .topContainer
+   {
+	   	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("resources/images/IMG_7603.jpg") !important;
+   }
+
+   #textcenterAboutUs
+   {
+   	font-family: Arial;
+   	text-align: center;
+   	font-size: 1em;
+   	letter-spacing: 0.1em;
+   	border-spacing: 1em;
+   	padding-top: 20px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+   }
