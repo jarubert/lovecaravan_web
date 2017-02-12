@@ -7,13 +7,40 @@
    
    .topContainer
    {
-	   	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../resources/images/IMG_4328.jpg");
-	   	background-size: 100%;
-	   	background-repeat: no-repeat;
-	   	background-position: center;
 	   	width: 100%;
-	   	height: 600px;
+	   	height: calc(100vh - 75px);
+	   	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../resources/images/IMG_4328.jpg") no-repeat 60%/cover;
    }
+
+   .topContainerBanner
+   {
+	   	width: 100%;
+	   	max-height: 1080px;
+   }
+
+
+	@media all and (max-width: 1200px) {
+	  .topContainerBanner {
+	    margin-top: 0;
+	  }
+	  .topContainerBanner .scroll-button {
+	    bottom: 4vh;
+	  }
+	}
+	@media all and (max-width: 992px) {
+	  .topContainerBanner {
+	    max-height: 100vh;
+	  }
+	  .topContainer {
+	    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../resources/images/IMG_4328.jpg") no-repeat 60%/cover;
+	  }
+	}
+	@media all and (max-width: 768px) {
+	  .video-banner__link {
+	    display: block;
+	    margin: 0 auto 4vh;
+	  }
+	}
 
 	.navigation-bar
 	{
@@ -22,18 +49,11 @@
 	 	text-align: right;
 	}
 
-	.logo
-	{
-		margin-left: 60px;
-		width: 200px;
-		height: 40px;
-		float: left;
-	}
 
 	.arrow_down
 	{
-	    margin-top: 230px;
-	    width: 40px;
+	    padding-top: 540px;
+	    width: 75px;
 	    display: block;
 	    margin-left: auto;
 	    margin-right: auto;
@@ -44,44 +64,133 @@
 
 	.topNav
 	{
-		margin-top: 40px;
-		width: 100%;
-		display: block;
-		float: left;
+		z-index: 5000001;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 60px;
+	    position: absolute;
+	}
+
+	.is-scrolled
+	{
+		position: fixed;
+		background-color: white;
+	}
+
+	.is-scrolled ul.menuList
+	{
+		background-color: white;
+	}
+
+	.is-scrolled ul.menuList li a
+	{
+		color: red;
+	}
+
+	@media all and (min-width: 1200px) {
+	  .topNav.is-scrolled {
+	    height: 0;
+	    z-index: 1010;
+	  }
 	}
 
 	.topNavMenu
 	{
 		width: 550px;
 		float: right;
+		    position: absolute;
 	}
 
-	.topNavMenu ul
+	ul.menuList
 	{
 		padding: 0px;
 		margin: 0px;
+		width: 100%;
+		height: 60px;
+		position: absolute;
 	}
 
-	.topNavMenu li
+	ul.menuList li
 	{
 		display: inline-block;
 	}
 
-	.topNavLink
+	ul.menuList li a
 	{
 		display: inline-block;
 		color: white;
-		padding-right: 33px;
+		padding-top: 14px;
+	    padding-right: 33px;
+	    padding-bottom: 14px;
+	    padding-left: 16px;
+	    font-size: 17px;
+	    transition: 0.3s;
 		cursor: pointer;
 		font-family: Arial;
 		text-decoration: none;
 		opacity: 0.7;
 	}
 
-	.topNavLink:hover
+	.logo
+	{
+		display: inline-block;
+		color: white;
+		padding-top: 14px;
+	    padding-right: 33px;
+	    padding-bottom: 14px;
+	    padding-left: 16px;
+	    font-size: 17px;
+	    transition: 0.3s;
+		cursor: pointer;
+		font-family: Arial;
+		text-decoration: none;
+		opacity: 0.7;
+		width: 156px;
+		height: 43px;
+		background: url("../resources/images/logo-t.png") no-repeat;
+	}
+
+	ul.menuList li a:hover
 	{
 		opacity: 1;
 	}
+
+
+	ul.menuList li.icon {display: none;}
+
+	@media screen and (max-width:680px) {
+	  ul.menuList li:not(:first-child) {display: none;}
+	  ul.menuList li.icon {
+	    float: right;
+	    display: inline-block;
+	  }
+	}
+
+	@media screen and (max-width:680px) {
+	  ul.menuList.responsive {
+	  	position: relative;
+	  	background-color: white;
+	  	transition: 0.3s;
+	  }
+	  ul.menuList.responsive li.icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	  }
+	  ul.menuList.responsive li {
+	    float: none;
+	    display: inline;
+	  }
+	  ul.menuList.responsive li a {
+	    display: block;
+	    text-align: left;
+	    background-color: white;
+	    opacity: 1;
+	    color: red;
+	  }
+	}
+
 
 	/* HEADER END */
 
@@ -205,7 +314,7 @@
 }
 .bottomGalleryTopContainer
 {
-	width: 800px;
+	width: 100%;
 	height: 300px;
 	
 }
@@ -332,3 +441,7 @@
 		width: 100%;
 	}
 }
+
+
+
+

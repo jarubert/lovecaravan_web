@@ -13,4 +13,19 @@
 				   });
 
     })
+    
+    $(document).on('scroll', function() {
+
+        var header = $(".topNav"),
+            transparencyHeight = 10,
+            currentScrollValue = $(document).scrollTop();
+
+        if (currentScrollValue >= transparencyHeight && currentScrollValue > 0) {
+            header.addClass('is-scrolled');
+        }
+        else {
+            header.removeClass('is-scrolled');
+        }
+
+    });
 </script> 

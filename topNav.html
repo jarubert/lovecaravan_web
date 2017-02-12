@@ -1,8 +1,14 @@
+<!--
 <div class="logo titlecaravan">
 	<span>LOVE CARAVAN</span>
 </div>
-<div class="topNavMenu">
-	<ul>
+
+<div class="topNavMenu">-->
+	<ul id="menuList" class="menuList">
+		<li>
+			<img style="vertical-align: middle;" src="resources/images/logo-t.png" />
+			<!--<div class="logo" ></div> -->
+		</li>
 		<li>
 			<a class="topNavLink" href="index.html">home</a>
 		</li>
@@ -18,5 +24,20 @@
 		<li>
 			<a class="topNavLink">make a donation</a>
 		</li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
 	</ul>
-</div>
+	<!--
+</div>-->
+
+<script>
+function myFunction() {
+    var x = document.getElementById("menuList");
+    if (x.className === "menuList") {
+        x.className += " responsive";
+    } else {
+        x.className = "menuList";
+    }
+}
+</script>
