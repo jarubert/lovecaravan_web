@@ -8,8 +8,19 @@
    .topContainer
    {
 	   	width: 100%;
-	   	height: calc(100vh - 75px);
-	   	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../resources/images/IMG_4328.jpg") no-repeat 60%/cover;
+	   	height: calc(100vh - 75px);	   	
+   }
+
+   .homePageBanner{
+   		width: 100%;
+	   	height: calc(100vh - 75px);	   	
+   		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../resources/images/IMG_4328.jpg") no-repeat 60%/cover;
+   }
+
+	.aboutUsBanner{
+		width: 100%;
+	   	height: calc(100vh - 75px);	   	
+   		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../resources/images/IMG_4328.jpg") no-repeat 60%/cover;
    }
 
    .topContainerBanner
@@ -31,9 +42,9 @@
 	  .topContainerBanner {
 	    max-height: 100vh;
 	  }
-	  .topContainer {
+	  /*.topContainer {
 	    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../resources/images/IMG_4328.jpg") no-repeat 60%/cover;
-	  }
+	  }*/
 	}
 	@media all and (max-width: 768px) {
 	  .video-banner__link {
